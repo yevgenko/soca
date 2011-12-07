@@ -103,7 +103,7 @@ module Soca
 
     desc 'open [ENV]', 'attempts to open the url for the current app in a browser'
     def open(env = 'default')
-      `open #{pusher(env).app_url}`
+      `google-chrome #{pusher(env).app_url}`
     end
 
     desc 'push [ENV]', 'builds and pushes the current app to couchdb'
